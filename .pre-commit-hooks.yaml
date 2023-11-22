@@ -224,6 +224,13 @@
   entry: dbt-docs-generate
   language: python
   pass_filenames: false
+- id: dbt-ls
+  name: dbt ls
+  description: Lists DBT models, sources, tests, and snapshots.
+  entry: dbt-ls
+  language: python
+  require_serial: true
+  types_or: [sql]
 - id: dbt-run
   name: dbt run
   description: Executes compiled sql model files.
